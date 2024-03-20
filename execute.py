@@ -1,0 +1,1 @@
+print("Novo projeto, copia do pinterest usando Flask.")
