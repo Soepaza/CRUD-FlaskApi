@@ -18,6 +18,12 @@ alunos = [
 def get_aluno():
     return jsonify(alunos)
 
+@myApp.route("/alunos/<int:id_aluno>", methods=['GET'])
+def get_aluno(id_aluno):
+    for jovem in alunos:
+        if jovem['id'] == id_aluno:
+            alunos.append(jovem)
+        return jsonify(alunos)
 
 @myApp.route("/alunos/<int:id_aluno>", methods=['DELETE'])
 def delete_aluno(id_aluno):
@@ -28,5 +34,7 @@ def delete_aluno(id_aluno):
     return "Aluno nao encontrado.", 404
 
 
+
 if (__name__) == "__main__":
     myApp.run(debug=True)
+
