@@ -1,5 +1,4 @@
 from flask import Flask, request, jsonify
-print("Novo projeto, copia do pinterest usando Flask.")
 
 # definir aplicacao
 myApp = Flask(__name__)
