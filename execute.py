@@ -64,3 +64,6 @@ def delete_aluno(id_aluno):
 # Executar
 if (__name__) == "__main__":
     myApp.run(debug=True)
+
+
+#iniciar meu projeto do pinterest
